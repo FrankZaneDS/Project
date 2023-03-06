@@ -1,0 +1,68 @@
+input {
+  width: 90%;
+  border-radius: 20px;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+}
+.search {
+  width: 60%;
+  display: flex;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+.headerUp {
+  display: flex;
+  justify-content: space-between;
+  background-color: #002242;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  height: 40%;
+}
+.headerUp > a {
+  color: white;
+}
+.headerDown {
+  display: flex;
+  height: 30%;
+}
+.boldButtons {
+  margin-left: 30px;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boldButtons > a {
+  margin-right: 30px;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.otherButtons {
+  display: flex;
+  align-items: center;
+}
+.otherButtons > a {
+  margin-right: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  height: 30%;
+}
