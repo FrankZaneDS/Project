@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { DataServices } from '../data.service';
+import { DataServices, Product } from '../data.service';
+import { CartShoppingService } from '../cart-shopping.service';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,14 @@ import { DataServices } from '../data.service';
 })
 export class HeaderComponent {
   searchText = '';
-
+  products: Product[] = this.shoppingChart.shoppingCart;
   // onClick() {
   //   console.log(this.searchText);
   // }
-  constructor(private dataServices: DataServices) {}
+  constructor(
+    private dataServices: DataServices,
+    private shoppingChart: CartShoppingService
+  ) {}
   filterProducts() {
     this.dataServices.setSearchText(this.searchText);
     console.log(this.dataServices.searchText);
