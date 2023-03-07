@@ -1,0 +1,13 @@
+<div class="card w-100">
+  <div
+    class="card-body d-flex justify-content-between"
+    *ngFor="let product of products"
+  >
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">
+      {{ product.disc }}
+    </p>
+    <h5>Price:{{ product.price }}$</h5>
+    <a href="#" class="btn btn-primary">Delete</a>
+  </div>
+</div>

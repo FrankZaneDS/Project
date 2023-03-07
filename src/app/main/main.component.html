@@ -37,10 +37,14 @@
             class="btn btn-primary"
             >Detaljnije</a
           > -->
-
-          <a href="#" [routerLink]="'/lenovo/' + i" class="btn btn-primary"
-            >Detaljnije</a
-          >
+          <div class="d-flex justify-content-between">
+            <a href="#" [routerLink]="'/lenovo/' + i" class="btn btn-primary"
+              >Detaljnije</a
+            >
+            <a href="#" class="btn btn-primary" (click)="onAddToCart(i)"
+              >Dodaj u korpu</a
+            >
+          </div>
         </div>
       </div>
 

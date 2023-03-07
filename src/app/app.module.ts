@@ -10,6 +10,7 @@ import { LenovoComponent } from './lenovo/lenovo.component';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { SearchPipe } from './search.pipe';
     FilterComponent,
     LenovoComponent,
     SearchPipe,
+    ShoppingCartComponent,
   ],
   imports: [
     FormsModule,
@@ -27,6 +29,7 @@ import { SearchPipe } from './search.pipe';
     RouterModule.forRoot([
       { path: 'lenovo/:id', component: LenovoComponent },
       { path: '', component: MainComponent },
+      { path: 'shopping-cart', component: ShoppingCartComponent },
     ]),
   ],
   providers: [],
