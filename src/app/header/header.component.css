@@ -86,3 +86,7 @@ a {
   vertical-align: top;
   margin-left: -10px;
 }
+.productCart {
+  background-color: white;
+  position: absolute;
+}

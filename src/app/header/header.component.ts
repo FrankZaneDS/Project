@@ -10,6 +10,7 @@ import { CartShoppingService } from '../cart-shopping.service';
 export class HeaderComponent {
   searchText = '';
   products: Product[] = this.shoppingChart.shoppingCart;
+  showCart: boolean = false;
   // onClick() {
   //   console.log(this.searchText);
   // }
